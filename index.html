@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Satu Link KPU Kabupaten Kotawaringin Barat</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Background color (Gray) */
+        body {
+            background-color: #fcf9f5;
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Responsive */
+        @media screen and (max-wdith: 480px) {
+            body {
+                padding: 25px 15px 20px 15px;
+            }
+        }
+
+        .main-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #800000;
+            margin-bottom: 6px;
+        }
+
+        .agency-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #2c3e50;
+            text-transform: uppercase;
+        }
+
+        .sub-agency {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #2c3e50;
+            margin-top: 6px;
+            text-transform: uppercase;
+        }
+
+        /* Main Container */
+        .main-container {
+            width: 100%;
+            max-width: 520px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Button / Link Card */
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 18px 22px;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid #eaeaea;
+            transition: all 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #800000; /* Red Maroon */
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(128, 0, 0, 0.15);
+            border-color: #800000;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            max-width: 520px;
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e5e5;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888888;
+        }
+
+        /* Floating Button */
+        .floating-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: #ffffff;
+            border-radius: 50px;
+            width: 52px;
+            height: 52px;
+            padding: 0 14px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                        transform 0.25s ease,
+                        box-shadow 0.25s ease;
+        }
+
+        .floating-btn .floating-text {
+            opacity: 0;
+            margin-left: 10px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            transition: opacity 0.25s ease 0.1s;
+            pointer-events: none;
+        }
+
+        .floating-btn:hover .floating-text {
+            opacity: 1;
+        }
+
+        .floating-btn:hover {
+            width: 170px;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.55);
+        }
+
+        .floating-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: #ffffff;
+            flex-shrink: 0;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-section">
+        <img src="1627539868logo-kpu.png" alt="Logo KPU" class="logo">
+        <div class="main-title">Layanan Satu Titik</div>
+        <div class="agency-title">Komisi Pemilihan Umum</div>
+        <div class="sub-agency">Kabupaten Kotawaringin Barat</div>
+    </div>
+
+    <!-- List of Service Buttons -->
+     <div class="main-container">
+        <a href="https://kotawaringinbaratkabppid.kpu.go.id/" target="_blank" class="btn-link">
+            <span>PPID</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="https://cekdptonline.kpu.go.id/" target="_blank" class="btn-link">
+            <span>DPT Online</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="https://kab-kotawaringinbarat.kpu.go.id/" target="_blank" class="btn-link">
+            <span>Website Resmi KPU</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="https://jdih.kpu.go.id/kalteng/kobar" target="_blank" class="btn-link">
+            <span>JDIH</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="https://laporpemilihkpukobar.com" target="_blank" class="btn-link">
+            <span>Lapor Pemilih</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="https://www.instagram.com/kpu.kotawaringinbarat/" target="_blank" class="btn-link">
+            <span>Instagram</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="https://www.facebook.com/swarakpukobar" target="_blank" class="btn-link">
+            <span>Facebook</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="https://www.youtube.com/@kpukobar6201" target="_blank" class="btn-link">
+            <span>Youtube</span>
+            <span>&rarr;</span>
+        </a>
+     </div>
+     <footer>
+        &copy; 2026 KPU Kabupaten Kotawaringin Barat. All rights reserved.
+
+        <!-- Whatsapp -->
+         <div class="footer-right">
+            <a href="https://wa.me/082253820626" target="_blank" class="floating-btn" aria-label="Contact Person">
+            <svg viewbox="0 0 24 24">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.03 14.69 2 12.04 2zM12.04 20.1c-1.44 0-2.85-.39-4.08-1.13l-.29-.17-3.02.79.81-2.94-.19-.3c-.81-1.28-1.24-2.77-1.24-4.3 0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.55-5.96c-.25-.13-1.48-.73-1.71-.82-.23-.09-.39-.13-.56.13-.17.25-.65.82-.8 1-.15.17-.31.19-.56.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.52.12-.12.25-.31.38-.47.13-.17.17-.28.25-.47.08-.19.04-.36-.02-.5-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.44.54.61.19 1.17.16 1.61.1.49-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29z"></path>
+            </svg>
+            <span class="floating-text">Contact Person</span>
+         </a>
+         </div>
+     </footer>
+</body>
+</html>
